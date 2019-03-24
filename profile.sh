@@ -248,9 +248,10 @@ git config --global push.default simple
 alias g='git status' # G
 alias gs='git status' # sorry, ghostscript
 alias gsr='forin git status' # git status recursive
-alias gcoh='git checkout HEAD -- '
+alias gcoh='git checkout HEAD -- ' # hard reset a single file
 alias gco='git checkout'
 __git_complete gco _git_checkout
+alias gco='git checkout -b' # create branch
 alias ga='git add'
 __git_complete ga _git_add
 alias gap='git add -p'
@@ -258,15 +259,19 @@ __git_complete gap _git_add
 alias gapu='git add -p -u'
 __git_complete gapu _git_add
 alias gd='git diff'
+__git_complete gd _git_diff
 alias gdc='git diff --cached'
+__git_complete gd _git_diff
 alias gc='git commit'
 __git_complete gc _git_commit
 alias gcm='git commit -m'
 __git_complete gcm _git_commit
 alias gca='git commit --amend'
+__git_complete gcm _git_commit
 alias gpom='git pull origin master'
 alias gpoh='git push origin HEAD'
 alias gpl='git pull --rebase'
+__git_complete gpl _git_pull
 alias grb='git rebase'
 __git_complete grb _git_rebase
 alias gr='git reset'
