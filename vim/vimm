@@ -1,0 +1,5 @@
+so ~/environment/vim/vimrc
+
+if has('mouse')
+  set mouse=a
+endif

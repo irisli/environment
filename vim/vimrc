@@ -1,0 +1,36 @@
+so ~/environment/vim/example_vimrc
+
+
+" Line numbers
+set hlsearch
+set ruler
+set number
+
+" Syntax highlighting
+syntax enable
+" Sublime like color theme
+so ~/environment/vim/molokai.vim
+"so ~/environment/vim/solarized.vim
+
+
+" Line at 80 characters
+if exists('+colorcolumn')
+   set colorcolumn=80
+endif
+
+" Show extra whitespace at the end of lines
+set list listchars=tab:→\ ,trail:·
+
+
+set whichwrap+=<,>,h,l,[,]
+set smartindent
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
+set noswapfile
+set nobackup
+
+set backspace=2 " make backspace work like in most other apps
+set backspace=indent,eol,start
+
