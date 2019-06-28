@@ -251,7 +251,7 @@ alias gsr='forin git status' # git status recursive
 alias gcoh='git checkout HEAD -- ' # hard reset a single file
 alias gco='git checkout'
 __git_complete gco _git_checkout
-alias gco='git checkout -b' # create branch
+alias gcob='git checkout -b' # create branch
 alias ga='git add'
 __git_complete ga _git_add
 alias gap='git add -p'
