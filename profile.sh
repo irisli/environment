@@ -8,6 +8,9 @@ ENVDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 PATH=$PATH:$ENVDIR/bin
 
+# common to both sh bash and zsh
+source ${ENVDIR}/common.sh
+
 # dependencies
 source ${ENVDIR}/git-prompt.sh
 
